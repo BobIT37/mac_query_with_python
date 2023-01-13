@@ -1,26 +1,53 @@
-# Macaddress_apiquery
+[![N|Solid](https://bobit.us/wp-content/uploads/2021/04/bobit-logo.png)](https://bobit37.github.io/Resume/)
+
+# Mac Adress API Query
+
 A solution to query the https://macaddress.io/ MAC address lookup API over the network and fetch the desired output
 
-Clone the repository by running
-https://github.com/yaminiveepuri/Macaddress_apiquery.git
+## Create an account
 
-Move to docker_pythonapp directory
-cd docker_pythonapp
+If you don't have an account, first create an account on https://macaddress.io/api/documentation/making-requests
 
-The application is coded and compiled in python 3
+Get API key
 
-To build the docker container
-  docker build -t docker_pythonapp
-  
-To run the image
-  docker run docker_pythonapp
-  
-The parameters are passed as Environment variables in dockerfile
+## Clone the repository by running
+```
+https://github.com/BobIT37/mac_query_with_python.git
 
-  ENV api_key=at_bTYKJq4aE0mFQtEsBy9Wn9mHECU09 
-  
-  ENV mac_address=44:38:39:ff:ef:57
- Default API key and MAC address are passed here
- 
- The environment variable values can be changed by changing the values in Dockerfile
- 
+```
+
+## Create a folder on your machine
+
+```
+cd Desktop
+mkdir <folder_name>
+cd <folder_name>
+```
+### The application is coded and compiled in python 3
+
+To run the application
+```
+cd <folder_name>
+docker compose up
+```
+
+To build docker container
+```
+docker build .
+```
+
+To run docker image
+```
+docker run <image_id>
+```
+
+### The parameters are passed as Environment variables in dockerfile
+
+```
+ENV api_key=at_luTOZ4OR2FtLibVqWvsKKdIlfLJq8 
+ENV mac_address=88:66:5a:35:5e:e2
+```
+
+Default API key and MAC address are passed here
+
+The environment variable values can be changed by changing the values in Dockerfile
