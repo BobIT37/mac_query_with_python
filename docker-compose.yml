@@ -1,0 +1,5 @@
+version: '3'
+services:
+  ilhan_mac_tests:
+    container_name: ilhan_mac_names
+    build: .
